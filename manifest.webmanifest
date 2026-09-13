@@ -1,0 +1,14 @@
+{
+  "name": "ゲーム＆おこづかい管理",
+  "short_name": "ゲーム管理",
+  "description": "勉強で貯めたゲーム時間とおこづかいを管理する家庭用アプリ",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#1749ad",
+  "lang": "ja",
+  "icons": [
+    {"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
