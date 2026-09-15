@@ -2,13 +2,13 @@
 (function(){
   const css=document.createElement('style');
   css.textContent=`
-    #charts .mini-chart{padding:12px 8px 10px}
-    #charts .bar-area{position:relative;height:174px;padding:30px 4px 0 34px;gap:12px;border-left:1px solid #94a3b8;border-bottom:1px solid #94a3b8;margin:10px 4px 20px 28px;overflow:visible}
-    #charts .bar-column{position:relative;z-index:2;width:48px}
-    #charts .bar-track{height:104px;width:30px;background:transparent;overflow:visible;border-radius:4px;margin:4px auto 5px}
+    #charts .mini-chart{padding:12px 8px 18px}
+    #charts .bar-area{position:relative;height:174px;padding:30px 4px 0 34px;gap:12px;border-left:1px solid #94a3b8;border-bottom:1px solid #94a3b8;margin:10px 4px 34px 28px;overflow:visible}
+    #charts .bar-column{position:relative;z-index:2;width:48px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;text-align:center}
+    #charts .bar-track{height:104px;width:30px;background:transparent;overflow:visible;border-radius:4px;margin:4px auto 0}
     #charts .bar-fill{border-radius:5px 5px 0 0;min-height:0}
-    #charts .bar-value{font-size:9px}
-    #charts .bar-label{font-size:10px;white-space:nowrap}
+    #charts .bar-value{position:absolute;bottom:110px;left:50%;transform:translateX(-50%);height:auto;font-size:9px;white-space:nowrap}
+    #charts .bar-label{position:absolute;top:calc(100% + 9px);left:50%;transform:translateX(-50%);font-size:10px;font-weight:800;white-space:nowrap}
     #charts .axis-grid{position:absolute;inset:30px 0 0 0;pointer-events:none;z-index:1}
     #charts .axis-line{position:absolute;left:0;right:0;border-top:1px solid #e2e8f0}
     #charts .axis-label{position:absolute;right:calc(100% + 6px);transform:translateY(50%);font-size:8px;font-weight:700;color:#64748b;white-space:nowrap}
